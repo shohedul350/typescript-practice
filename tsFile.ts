@@ -1,39 +1,44 @@
-// array
-var names = ['shohedul', 'naser', 'shanto'];
-names.push('emran');
-// names.push(3);  we can't do this
-//  names[1] = 3;   we can't do this
+// explicit types
+let character: String;
+let age: number;
+let isAuthenticated: boolean;
 
 
-let numbers = [10, 20, 12, 15];
+//  age= 'shohedul' we can't do this 
+age= 21;
+//  isAuthenticated= 20;   we can't do this 
+isAuthenticated = true;
 
-numbers.push(25);
-// numbers.push('shaun'); we can't do this
-// nu
+//arrays 
+let skills : string[];
+
+//  skills = [10,20];  we can't do this 
+skills = ['node.js','react'];
+
+let colors: string[] = [];
+// empty array 
+colors.push('blue');
+//union 
+
+let mixedArray: (String | Number | Boolean)[] = [];
+mixedArray.push('shohedul');
+mixedArray.push(20);
+mixedArray.push(true);
+let uid: number | string;
+uid = 123;
+uid = '1234'
+// objects
+
+let person : object;
+
+person= {name:'shohedul',age:20}
 
 
+let obj2 : {
+  name: string,
+  age: number,
+  skills: string[]
+  
+}
 
-let mixed = ['emon', 4, 'shanto', 8, 9];
-mixed.push('ryu');
-mixed.push(10);
-mixed[0] = 3;
-
-// object
-
-let person = {
-  name: 'shohedul',
-  color: 'blue',
-  age: 30
-};
-person.age = 40;
-person.name = 'ryu';
-// person.age = '30';  we can't do this
-// person.skills = ['javascript,python']  we can't do this
-
-
-person = {
-  name: 'yoshi',
-  color: 'orange',
-  age: 40,
-  // skills: ['running'], we can't do this
-};
+obj2 = {name:'shohedul', age:20, skills:['react','node']}
