@@ -26,3 +26,8 @@ var person;
 person = { name: 'shohedul', age: 20 };
 var obj2;
 obj2 = { name: 'shohedul', age: 20, skills: ['react', 'node'] };
+var person1 = {
+    name: 'shohedil',
+    age: 20
+};
+console.log('hello');

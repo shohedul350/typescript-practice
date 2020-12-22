@@ -41,4 +41,17 @@ let obj2 : {
   
 }
 
-obj2 = {name:'shohedul', age:20, skills:['react','node']}
+obj2 = {name:'shohedul', age:20, skills:['react','node']};
+
+
+const person1 : {
+  name: string;
+  age: number;
+} = {
+  name: 'shohedil',
+  age:20
+}
+
+
+
+console.log('hello')
