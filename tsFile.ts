@@ -1,44 +1,26 @@
-// explicit types
-let character: String;
-let age: number;
-let isAuthenticated: boolean;
+let age: any = 20;
 
+age = true;
 
-//  age= 'shohedul' we can't do this 
-age= 21;
-//  isAuthenticated= 20;   we can't do this 
-isAuthenticated = true;
+console.log(age);
 
-//arrays 
-let skills : string[];
+age = 'hello';
+console.log(age);
 
-//  skills = [10,20];  we can't do this 
-skills = ['node.js','react'];
+age = { name: 'luigi' };
+console.log(age);
 
-let colors: string[] = [];
-// empty array 
-colors.push('blue');
-//union 
+let mixed: any[] = [];
 
-let mixedArray: (String | Number | Boolean)[] = [];
-mixedArray.push('shohedul');
-mixedArray.push(20);
-mixedArray.push(true);
-let uid: number | string;
-uid = 123;
-uid = '1234'
-// objects
+mixed.push(5);
+mixed.push('shohedul');
+mixed.push(false);
+console.log(mixed);
 
-let person : object;
+let person: { name: any, age: any };
 
-person= {name:'shohedul',age:20}
+person = { name: 'shohedul', age: 25 };
+console.log(person);
 
-
-let obj2 : {
-  name: string,
-  age: number,
-  skills: string[]
-  
-}
-
-obj2 = {name:'shohedul', age:20, skills:['react','node']}
+person = { name: 25, age: 'shohedul' };
+console.log(person);
