@@ -1,17 +1,19 @@
-var age = 20;
-age = true;
-console.log(age);
-age = 'hello';
-console.log(age);
-age = { name: 'luigi' };
-console.log(age);
-var mixed = [];
-mixed.push(5);
-mixed.push('shohedul');
-mixed.push(false);
-console.log(mixed);
-var person;
-person = { name: 'shohedul', age: 25 };
-console.log(person);
-person = { name: 25, age: 'shohedul' };
-console.log(person);
+"use strict";
+var greet = function () {
+    console.log('hello, world');
+};
+// greet = 'hello';  we can't do this
+greet = function () {
+    console.log('hello, again');
+};
+var add = function (a, b, c /*?*/) {
+    if (c === void 0) { c /*?*/ = 10; }
+    console.log(a + b);
+    console.log(c);
+};
+add(5, 10, 'shohedul');
+var minus = function (a, b) {
+    return a + b;
+};
+var result = minus(10, 7);
+console.log(result);
